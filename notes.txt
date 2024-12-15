@@ -1,0 +1,3 @@
+2. Tee unit testing kaikille luokille , tee database testing, Restful testing Robot Frameworkilla.
+3. Vaihda tietokanta MongoDB. 
+4. Tee tästä restful api ja tee front-end web sivu.
