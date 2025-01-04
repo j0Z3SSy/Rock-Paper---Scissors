@@ -1,6 +1,6 @@
 # test-tarkista_voittaja.py
 import unittest
-import game
+import Game
 
 class TestTarkistaVoittaja(unittest.TestCase):
     
@@ -10,7 +10,7 @@ class TestTarkistaVoittaja(unittest.TestCase):
         #computer_move = "Rock"
         computer_move = "Scissors"
         # Act
-        receive = game.tarkista_voittaja(player_move,computer_move)
+        receive = Game.tarkista_voittaja(player_move,computer_move)
         # Assert
         self.assertEqual(receive, "tie")
         
@@ -20,7 +20,7 @@ class TestTarkistaVoittaja(unittest.TestCase):
         #computer_move = "Scissors"
         computer_move = "Rock"
         # Act
-        receive = game.tarkista_voittaja(player_move,computer_move)
+        receive = Game.tarkista_voittaja(player_move,computer_move)
         # Assert
         self.assertEqual(receive, "player")
         
@@ -30,7 +30,7 @@ class TestTarkistaVoittaja(unittest.TestCase):
         #computer_move = "Paper"
         computer_move = "Rock"
         # Act
-        receive = game.tarkista_voittaja(player_move,computer_move)
+        receive = Game.tarkista_voittaja(player_move,computer_move)
         # Assert
         self.assertEqual(receive, "computer")
 
